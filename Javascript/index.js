@@ -1,5 +1,5 @@
-const contact_phone = "+1(385)-580-7942";
-const contact_email = "info@lifecarecommunity.us";
+const contact_phone = "+1(000)-000-0000";
+const contact_email = "info@example.com";
 const contact_address = "4373 Lennox Drive, South Jordan, UT 84009";
 const mobile_menu = document.getElementById('mobile-menu');
 const menu_open_btn = document.getElementById('menu-open');
