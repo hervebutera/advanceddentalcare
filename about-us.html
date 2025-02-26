@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" ontouchmove>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../Styles/output.css" rel="stylesheet" />
+    <link rel="icon" href="../Images/logo.jpg" type="image/png" />
+    <title>
+      About Life Care Community: Dedicated to Supporting Intellectual
+      Disabilities
+    </title>
+    <meta
+      name="description"
+      content="Learn about our mission and commitment to fostering dignity, inclusion, and growth for individuals with intellectual and developmental disabilities in Utah."
+    />
+  </head>
+  <body>
+    <!-- start nav bar -->
+    <nav id="navbar" class="fixed container z-50" style="max-width: none">
+      <div
+        class="flex flex-col gap-1 px-4 xs:px-8 py-2 md:flex-row md:justify-center md:gap-20 md:items-center bg-white border-b-gray-200"
+      >
+        <!--#F9FAFB-->
+        <div class="flex justify-center gap-2 items-center">
+          <a href="" class="contact-phone-icon">
+            <div
+              class="flex items-center justify-center bg-primaryBlue w-6 h-6 p-1 rounded-full"
+            >
+              <img src="../Images/telephone.png" alt="" />
+            </div>
+          </a>
+          <p class="text-sm font-medium text-primaryTextBlack">
+            <a href="" class="contact-phone"></a>
+          </p>
+        </div>
+        <div class="flex justify-center gap-2 items-center">
+          <a href="" class="contact-email-icon">
+            <div
+              class="flex items-center justify-center bg-primaryBlue w-6 h-6 p-1 rounded-full"
+            >
+              <img src="../Images/message.png" alt="" />
+            </div>
+          </a>
+          <p class="text-sm font-medium text-primaryTextBlack">
+            <a href="" class="contact-email"></a>
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-between px-4 py-3 bg-primaryBlue xs:px-8"
+      >
+        <div class="flex lg:flex-1 logo">
+          <a href="../index.html" class="-m-1.5 flex items-center gap-2">
+            <img class="nav-logo-size logo-img-others" src="" alt="" />
+            <h1 class="text-textDarkWhiteHover text-lg sm:text-xl font-medium">
+              Life Care Community
+            </h1>
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button
+            id="menu-open"
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="hidden lg:flex lg:gap-x-6 2xl:gap-x-12">
+          <li
+            class="text-base leading-6 text-textDarkWhiteHover border-b-2 border-transparent hover:border-white duration-300 uppercase transform"
+          >
+            <a href="../index.html">Home</a>
+          </li>
+          <li
+            id="services-navlink"
+            class="flex items-center relative cursor-pointer services-navlink text-base leading-6 text-textDarkWhiteHover border-b-2 border-transparent hover:border-primaryBlue duration-300 transform"
+          >
+            <span class="uppercase">Our Services</span>
+            <svg
+              class="w-2.5 h-2.5 ms-2.5 inline-block"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+            <div
+              id="services-dropdown"
+              class="absolute top-6 -left-10 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-60 duration-300 transform submenu-dropdown"
+            >
+              <ul class="py-2 text-sm text-primaryTextBlack">
+                <li class="block px-4 py-2">
+                  <a
+                    href="./residential-support.html"
+                    class="border-b-2 border-transparent hover:border-primaryBlue duration-300 transform"
+                    >Residential Support Services</a
+                  >
+                </li>
+                <li class="block px-4 py-2">
+                  <a
+                    href="./adult-educational-day-services.html"
+                    class="border-b-2 border-transparent hover:border-primaryBlue duration-300 transform"
+                    >Adult Educational Day Services</a
+                  >
+                </li>
+                <li class="block px-4 py-2">
+                  <a
+                    href="./respite-care-services.html"
+                    class="border-b-2 border-transparent hover:border-primaryBlue duration-300 transform"
+                    >Respite Care Services</a
+                  >
+                </li>
+                <li class="block px-4 py-2">
+                  <a
+                    href="./supported-employment-services.html"
+                    class="border-b-2 border-transparent hover:border-primaryBlue duration-300 transform"
+                    >Supported Employment</a
+                  >
+                </li>
+                <li class="block px-4 py-2">
+                  <a
+                    href="./host-homes-services.html"
+                    class="border-b-2 border-transparent hover:border-primaryBlue duration-300 transform"
+                    >Host Homes</a
+                  >
+                </li>
+                <li class="block px-4 py-2">
+                  <a
+                    href="./community-based-services.html"
+                    class="border-b-2 border-transparent hover:border-primaryBlue duration-300 transform"
+                    >Community Based Services</a
+                  >
+                </li>
+                <li class="block px-4 py-2">
+                  <a
+                    href="./transportation-services.html"
+                    class="border-b-2 border-transparent hover:border-primaryBlue duration-300 transform"
+                    >Transportation</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+            class="text-base leading-6 text-textDarkWhiteHover border-b-2 border-white hover:border-white duration-300 uppercase transform"
+          >
+            <a href="./about-us.html">About Us</a>
+          </li>
+          <li
+            class="text-base leading-6 text-textDarkWhiteHover border-b-2 border-transparent hover:border-white duration-300 uppercase transform"
+          >
+            <a href="./join-our-team.html">Join Our Team</a>
+          </li>
+        </ul>
+        <div class="hidden lg:flex lg:flex-1 lg:gap-4 lg:justify-end">
+          <a
+            href="./donate.html"
+            class="flex items-center text-base border-2 rounded-md border-primaryYellow text-textDarkWhiteHover hover:bg-white hover:border-white hover:text-primaryBlue px-4 py-1 duration-300 uppercase transform"
+            >Donate</a
+          >
+          <a
+            href="./contact-us.html"
+            class="flex items-center gap-2 text-base border-2 rounded-md border-primaryYellow bg-primaryYellow hover:bg-white hover:border-white text-primaryBlue px-4 py-1 duration-300 uppercase transform"
+          >
+            <span>Contact Us</span>
+            <span>
+              <svg
+                class="w-6 h-6 inline"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 12H5m14 0-4 4m4-4-4-4"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <nav class="lg:hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div id="mobile-menu-bg-blocker" class="hidden"></div>
+      <div
+        id="mobile-menu"
+        class="fixed inset-y-0 right-0 z-50 custom-left-full overflow-y-auto bg-white px-4 xs:px-8 py-6 sm:max-w-sm sm:ring-1 sm:ring-primaryBlue/10"
+      >
+        <div class="flex items-center justify-between">
+          <a href="../index.html" class="-m-1.5 flex items-center gap-2 logo">
+            <img class="nav-logo-size logo-img-others" src="" alt="" />
+            <h1 class="text-primaryTextBlack text-lg sm:text-xl font-medium">
+              Life Care Community
+            </h1>
+          </a>
+          <button
+            id="menu-close"
+            type="button"
+            class="-m-2.5 rounded-md p-2.5 text-gray-700"
+          >
+            <span class="sr-only">Close menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <ul class="space-y-2 py-6">
+              <li
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-primaryTextBlack hover:bg-gray-50 uppercase"
+              >
+                <a href="../index.html">Home</a>
+              </li>
+              <li
+                id="services-mob-navlink"
+                class="-mx-3 block relative rounded-lg px-3 py-2 text-base font-medium leading-7 text-primaryTextBlack hover:bg-gray-50"
+              >
+                <span class="uppercase">Our Services</span>
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5 inline-block"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+                <div
+                  id="services-dropdown"
+                  class="absolute top-6 left-5 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-60 duration-300 transform submenu-dropdown"
+                >
+                  <ul class="p-2 text-sm text-primaryTextBlack">
+                    <li class="block px-4 py-2 hover:bg-gray-50 rounded-md">
+                      <a
+                        href="./residential-support.html"
+                        class="duration-300 transform"
+                        >Residential Support Services</a
+                      >
+                    </li>
+                    <li class="block px-4 py-2 hover:bg-gray-50 rounded-md">
+                      <a
+                        href="./adult-educational-day-services.html"
+                        class="duration-300 transform"
+                        >Adult Educational Day Services</a
+                      >
+                    </li>
+                    <li class="block px-4 py-2 hover:bg-gray-50 rounded-md">
+                      <a
+                        href="./respite-care-services.html"
+                        class="duration-300 transform"
+                        >Respite Care Services</a
+                      >
+                    </li>
+                    <li class="block px-4 py-2 hover:bg-gray-50 rounded-md">
+                      <a
+                        href="./supported-employment-services.html"
+                        class="duration-300 transform"
+                        >Supported Employment</a
+                      >
+                    </li>
+                    <li class="block px-4 py-2 hover:bg-gray-50 rounded-md">
+                      <a
+                        href="./host-homes-services.html"
+                        class="duration-300 transform"
+                        >Host Homes</a
+                      >
+                    </li>
+                    <li class="block px-4 py-2 hover:bg-gray-50 rounded-md">
+                      <a
+                        href="./community-based-services.html"
+                        class="duration-300 transform"
+                        >Community Based Services</a
+                      >
+                    </li>
+                    <li class="block px-4 py-2 hover:bg-gray-50 rounded-md">
+                      <a
+                        href="./transportation-services.html"
+                        class="duration-300 transform"
+                        >Transportation Services</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-primaryTextBlack bg-gray-50 uppercase"
+              >
+                <a href="./about-us.html">About Us</a>
+              </li>
+              <li
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-primaryTextBlack hover:bg-gray-50 uppercase"
+              >
+                <a href="./join-our-team.html">Join Our Team</a>
+              </li>
+            </ul>
+            <div
+              class="py-6 flex flex-col xs:flex-row xs:justify-between gap-3 px-4"
+            >
+              <a
+                href="./donate.html"
+                class="w-[50%] sm:w-[50%] -mx-3 rounded-lg px-3 py-2 text-base leading-7 text-primaryTextBlack border-2 border-primaryBlue hover:bg-primaryYellow hover:border-primaryYellow hover:text-textDarkWhiteHover uppercase"
+                >Donate</a
+              >
+              <a
+                href="./contact-us.html"
+                class="w-[50%] sm:w-[50%] -mx-3 rounded-lg px-3 py-2 text-base leading-7 bg-primaryBlue border-2 border-primaryBlue hover:bg-primaryYellow hover:border-primaryYellow text-textDarkWhiteHover uppercase"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav bar -->
+    <main>
+      <div class="w-full h-40 md:h-[125px] bg-white"></div>
+      <div
+        class="relative bg-cover bg-center h-96 px-4 xs:px-8 xl:h-[650px] flex items-center justify-center"
+        style="background-image: url('../Images/about.jpg')"
+      >
+        <h1
+          class="text-3xl xl:text-5xl font-bold text-white text-center relative z-10 bg-black bg-opacity-70 p-6 xl:p-20 rounded-lg"
+        >
+          Get to know us
+        </h1>
+      </div>
+
+      <section
+        class="py-16 px-4 space-y-20 xs:px-8 sm:-mt-0 xl:w-[80%] xl:mx-auto xl:py-28"
+      >
+        <div class="space-y-3 md:space-y-4">
+          <h3
+            class="hero-h1 text-2xl xl:text-3xl text-primaryTextBlack font-bold"
+          >
+            About Us
+          </h3>
+          <p class="hero-p text-sm lg:text-base text-textGray">
+            Life Care Community is dedicated to enhancing the lives of
+            individuals with developmental disabilities through compassionate
+            and high-quality residential support services. Our organization was
+            established by two passionate advocates who saw a need for better
+            care and support within our community. With their combined expertise
+            in direct care and medical fields, they created a nurturing
+            environment that addresses both medical and developmental needs,
+            ensuring each resident can thrive in a safe and supportive home.
+          </p>
+        </div>
+        <div class="space-y-3 md:space-y-4">
+          <h3
+            class="hero-h1 text-2xl xl:text-3xl text-primaryTextBlack font-bold"
+          >
+            Our History
+          </h3>
+          <p class="hero-p text-sm lg:text-base text-textGray">
+            Life Care Community was founded out of a deep commitment to
+            improving the lives of individuals with developmental disabilities.
+            Our journey began when our two founders, both with extensive
+            backgrounds in advocacy and care, identified a critical need for
+            superior residential support services.
+          </p>
+          <p class="hero-p text-sm lg:text-base text-textGray">
+            One founder, with years of experience working directly with
+            individuals with developmental disabilities, brought a wealth of
+            knowledge and a heartfelt dedication to creating supportive and
+            inclusive environments. The other founder, with a strong medical
+            background, understood the importance of a holistic approach to
+            care, emphasizing the integration of medical and developmental
+            needs.
+          </p>
+          <p class="hero-p text-sm lg:text-base text-textGray">
+            Our founders saw an opportunity to improve the care provided to
+            individuals with developmental disabilities. They believed that
+            everyone deserved to be treated with the same care and compassion as
+            family members. This vision inspired the creation of Life Care
+            Community, where we are dedicated to delivering exceptional,
+            personalized care that values and respects each resident.
+          </p>
+        </div>
+
+        <div class="space-y-3 md:space-y-4 reveal">
+          <h3 class="text-2xl xl:text-3xl text-primaryTextBlack font-bold">
+            Our Mission
+          </h3>
+          <p class="text-sm lg:text-base text-textGray">
+            Our mission is to develop residential support services that empower
+            individuals with intellectual and developmental disabilities to
+            achieve the highest degree of self-determination and quality of
+            life.
+          </p>
+        </div>
+      </section>
+      <section class="px-4 py-16 bg-primaryBlue xs:px-8 xl:py-24">
+        <div class="space-y-10 w-full xl:w-[80%] xl:mx-auto">
+          <div class="space-y-3 md:space-y-4 reveal">
+            <h2 class="text-2xl xl:text-3xl text-textDarkWhiteBold font-bold">
+              Our values
+            </h2>
+            <p class="text-xs md:text-sm text-textDarkWhite">
+              We are guided by a set of core values that shape everything we do
+              at Life Care Community. These values reflect our commitment to
+              providing exceptional care and fostering an inclusive, empowering
+              environment for all our residents.
+            </p>
+          </div>
+
+          <div class="w-full grid grid-cols-1 gap-12 md:gap-48 md:grid-cols-2">
+            <div
+              class="w-full justify-end sm:max-w-96 space-y-4 text-center md:text-left reveal"
+            >
+              <h3 class="text-xl font-semibold text-textDarkWhiteHover">
+                Compassion
+              </h3>
+              <p class="text-sm text-textDarkWhite">
+                We treat every resident with kindness, empathy, and respect.
+              </p>
+            </div>
+            <div
+              class="w-full sm:max-w-96 space-y-4 text-center md:text-left reveal"
+            >
+              <h3 class="text-xl font-semibold text-textDarkWhiteHover">
+                Quality Care
+              </h3>
+              <p class="text-sm text-textDarkWhite">
+                We are committed to providing the highest standards of care.
+              </p>
+            </div>
+            <div
+              class="w-full sm:max-w-96 space-y-4 text-center md:text-left reveal"
+            >
+              <h3 class="text-xl font-semibold text-textDarkWhiteHover">
+                Inclusivity
+              </h3>
+              <p class="text-sm text-textDarkWhite">
+                We create an environment where everyone feels welcomed and
+                valued.
+              </p>
+            </div>
+            <div
+              class="w-full sm:max-w-96 space-y-4 text-center md:text-left reveal"
+            >
+              <h3 class="text-xl font-semibold text-textDarkWhiteHover">
+                Empowerment
+              </h3>
+              <p class="text-sm text-textDarkWhite">
+                We support residents in achieving their fullest potential.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="bg-secondaryBlueLight py-14 sm:py-28">
+      <div
+        class="px-4 xs:px-8 flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
+      >
+        <div class="w-full space-y-4 xl:space-y-8">
+          <h2
+            class="text-2xl xl:text-4xl font-bold text-primaryTextBlack text-center reveal"
+          >
+            Join us in making a positive impact. Contact us or donate to support
+            our community.
+          </h2>
+
+          <div class="space-y-4 xl:space-y-8">
+            <div class="flex gap-8 reveal">
+              <div
+                class="hero-ctas flex flex-row justify-center gap-2 sm:gap-6 w-full"
+              >
+                <a
+                  id=""
+                  href="./contact-us.html"
+                  class="border-2 border-primaryBlue bg-primaryBlue hover:bg-primaryYellow hover:border-primaryYellow cursor-pointer text-sm px-5 py-2 rounded-lg text-textWhite text-center duration-300 uppercase transform"
+                  >Contact Us</a
+                >
+                <a
+                  id=""
+                  href="./donate.html"
+                  class="border-2 border-primaryBlue hover:bg-primaryYellow hover:border-primaryYellow cursor-pointer text-sm px-5 py-2 rounded-lg text-primaryBlue hover:text-textWhite text-center duration-300 uppercase transform"
+                >
+                  Donate</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-primaryBlue">
+      <div class="mx-auto px-4 pb-6 pt-16 xs:px-8 lg:pt-24">
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+          <div>
+            <div class="flex flex-col gap-y-4 logo">
+              <img class="footer-logo-size logo-img-others" src="" alt="" />
+              <a
+                href="../index.html"
+                class="text-textDarkWhiteBold text-lg sm:text-xl font-medium"
+                >Life Care Community</a
+              >
+            </div>
+
+            <p
+              class="mt-6 max-w-md text-left leading-relaxed text-textDarkWhite sm:max-w-xs"
+            >
+              A person-centered care that empowers individuals to reach their
+              fullest potential.
+            </p>
+
+            <ul class="mt-8 flex gap-4 justify-start">
+              <li>
+                <a
+                  href=""
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-textDarkWhiteHover transition hover:text-primaryYellow"
+                >
+                  <span class="sr-only">Facebook</span>
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href=""
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-textDarkWhiteHover transition hover:text-primaryYellow"
+                >
+                  <span class="sr-only">Instagram</span>
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href=""
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-textDarkWhiteHover transition hover:text-primaryYellow"
+                >
+                  <span class="sr-only">Twitter</span>
+                  <svg
+                    class="w-[20px] h-[20px]"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2"
+          >
+            <div class="text-left">
+              <p class="text-xl font-semibold text-textDarkWhiteBold">
+                Quick Links
+              </p>
+
+              <ul class="mt-8 space-y-4 text-sm">
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="../index.html"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./about-us.html"
+                  >
+                    About Us
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./join-our-team.html"
+                  >
+                    Join Our Team
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./donate.html"
+                    >Donate</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="text-left">
+              <p class="text-xl font-semibold text-textDarkWhiteBold">
+                Our Services
+              </p>
+
+              <ul class="mt-8 space-y-4 text-sm">
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./residential-support.html"
+                  >
+                    Residential Support Services
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./adult-educational-day-services.html"
+                    >Adult Educational Day Services</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./respite-care-services.html"
+                    >Respite Care Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./supported-employment-services.html"
+                    >Supported Employment</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./host-homes-services.html"
+                    >Host Homes</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./community-based-services.html"
+                    >Community Based Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-textDarkWhite transition hover:text-primaryYellow"
+                    href="./transportation-services.html"
+                    >Transportation Services</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="text-left">
+              <p class="text-xl font-semibold text-textDarkWhiteBold">
+                Contact Us
+              </p>
+
+              <ul class="mt-8 space-y-4 text-sm">
+                <li class="flex items-center gap-1.5 justify-start">
+                  <a href="" class="contact-phone-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-5 shrink-0 text-textDarkWhiteHover"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                  </a>
+                  <span class="flex-1 text-textDarkWhite"
+                    ><a href="" class="contact-phone"></a
+                  ></span>
+                </li>
+                <li class="flex items-center gap-1.5 justify-start">
+                  <a href="" class="contact-email-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-5 shrink-0 text-textDarkWhiteHover"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </a>
+                  <span class="flex-1 text-textDarkWhite"
+                    ><a href="" class="contact-email break-all"></a
+                  ></span>
+                </li>
+                <li class="flex items-start gap-1.5 justify-start">
+                  <a href="" class="contact-address-icon" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="size-5 shrink-0 text-textDarkWhiteHover"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </a>
+                  <address class="-mt-0.5 flex-1 not-italic text-textDarkWhite">
+                    <a href="" class="contact-address"></a>
+                  </address>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-gray-500 pt-6">
+          <div class="text-center">
+            <p class="mt-4 text-sm text-gray-300 sm:order-first sm:mt-0">
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Life Care Community. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--bottom corner chat -->
+    <div
+      id="chat"
+      class="hidden transition_custom_styles fixed z-50 bottom-24 right-4 w-[80%] h-[70dvh] sm:w-72 xl:w-80 bg-white border border-primaryBlue rounded-lg shadow-lg xs:right-8 sm:bottom-28"
+    >
+      <button
+        id="chat-close"
+        class="absolute right-2 top-2 rounded-md p-2 bg-white border border-primaryBlue hover:bg-textDarkWhiteHover"
+      >
+        <img class="w-3 h-3" src="../Images/close.png" alt="close-model-btn" />
+      </button>
+      <!-- chat header with profile -->
+      <div
+        class="w-full h-[10%] px-4 py-3 rounded-tl-lg rounded-tr-lg bg-powderBlue"
+      >
+        <div class="w-full h-full gap-2 flex items-center">
+          <img class="w-7 h-7" src="../Images/bot-icon.png" alt="" />
+          <div>
+            <p class="text-sm font-medium">Chat Bot</p>
+            <p class="text-xs text-textGray">Ask a question</p>
+          </div>
+        </div>
+      </div>
+      <!-- chat header with profile -->
+
+      <!-- chat body -->
+      <div
+        id="chat-body"
+        class="p-4 w-full h-[90%] overflow-y-auto space-y-1"
+      ></div>
+      <!-- chat body -->
+    </div>
+    <!--bottom corner chat -->
+
+    <!-- bottom corner chat toggle button -->
+    <button
+      id="chat-open-btn"
+      class="fixed z-50 flex items-center justify-center bottom-4 right-4 w-16 h-16 sm:w-20 sm:h-20 bg-primaryBlue border rounded-full hover:border-4 hover:border-powderBlue shadow-2xl xs:right-8"
+    >
+      <img
+        class="w-8 h-8 sm:w-10 sm:h-10"
+        src="../Images/bubble-chat.png"
+        alt=""
+      />
+    </button>
+    <!-- bottom corner chat toggle button -->
+    <script src="../Javascript/index.js"></script>
+  </body>
+</html>
