@@ -47,14 +47,14 @@ body {
     animation: animate 1.4s ease-in-out 1 forwards;
 }
 
-div.rounded-effect-btn::before {
+.rounded-effect-btn::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     display: block;
     border-radius: 28px;
-    background: #56e600;
+    background-color: #7AB554;
     width: 45px; 
     height: 45px;
     transition: width 0.4s ease; 

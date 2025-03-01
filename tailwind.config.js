@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './Pages/**/*.html',
+    './**/*.html',
     './index.html',
   ],
   theme: {
     screens: {
         xs: "320px",
+        "2xs": "360px",
         sm: "480px",
         md: "768px",
         lg: "976px",
@@ -23,10 +24,10 @@ module.exports = {
     extend: {
       colors: {
 
-        primaryBlue: "#56e600",//#6f16eb
+        primaryBlue: "#6f16eb",//
         secondaryBlueLight: "#F4F2FF",
         textDarkBlue: "#2E076E",
-        primaryGreen: "#56e600",
+        primaryGreen: "#7AB554",//#56e600
         powderBlue: "#cbd9f0", 
         textGray: "#374151bf", 
         textWhite: "#FFFFFF", 

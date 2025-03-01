@@ -1,42 +1,18 @@
-const contact_phone = "+1(000)-000-0000";
+const contact_phone = "(000)-000-0000";
 const contact_email = "info@example.com";
 const contact_address = "4373 Lennox Drive, South Jordan, UT 84009";
 const mobile_menu = document.getElementById('mobile-menu');
 const menu_open_btn = document.getElementById('menu-open');
 const mobile_menu_bg_blocker = document.getElementById('mobile-menu-bg-blocker');
+const hero_header = document.getElementById('hero-header');
+const navbar = document.getElementById('navbar');
+const nav_link_item = document.querySelectorAll(".nav-link-item");
+const logo_text = document.getElementById("logo-text");
+// const nav_links_div = document.getElementById("nav-links-div");
+const menu_open_svg = document.getElementById("menu-open-svg");
 
 
-window.addEventListener('scroll', function () {
-    const hero_header = document.getElementById('hero-header');
-    const navbar = document.getElementById('navbar');
-    const nav_link_item = document.querySelectorAll(".nav-link-item");
-    const logo_text = document.getElementById("logo-text");
-    // const nav_links_div = document.getElementById("nav-links-div");
-    const menu_open_svg = document.getElementById("menu-open-svg");
-  
-    if ( (window.scrollY ) > (hero_header.offsetHeight - 160) ) {
 
-        navbar.style.backgroundColor = "#6f16eb"; //0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) 
-               
-        nav_link_item.forEach(item => {
-            item.style.color = "white"; 
-        })
-        logo_text.style.color = "white"
-        // nav_links_div.style.borderBlockColor = "white";
-        menu_open_svg.style.stroke = "#ffffff";
-        console.log(menu_open_svg);
-    } else {
-        navbar.style.backgroundColor = "#FFFFFF";
-        nav_link_item.forEach(item => {
-            item.style.color = "black"; 
-        })
-        logo_text.style.color = "black";
-        // nav_links_div.style.borderBlockColor = "#374151bf";
-        menu_open_svg.style.stroke = "#000000";
-        console.log(menu_open_svg);
-        
-    }
-});
 
 
 

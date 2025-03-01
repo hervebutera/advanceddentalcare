@@ -99,12 +99,12 @@
                 <a href="./index.html">Home</a>
               </li>
               <li
-                class="relative text-sm leading-6 font-medium text-black after:content-[''] after:bg-primaryGreen after:w-[100%] after:h-[3px] after:left-0 after:-bottom-[5px] after:absolute after:duration-300 hover:after:w-[100%] uppercase transform nav-link-item"
+                class="relative text-sm leading-6 font-medium text-black after:content-[''] after:bg-primaryGreen after:w-[0%] after:h-[3px] after:left-0 after:-bottom-[5px] after:absolute after:duration-300 hover:after:w-[100%] uppercase transform nav-link-item"
               >
                 <a href="./about-us.html">ABOUT US</a>
               </li>
               <li
-                class="relative text-sm leading-6 font-medium text-black after:content-[''] after:bg-primaryGreen after:w-[0%] after:h-[3px] after:left-0 after:-bottom-[5px] after:absolute after:duration-300 hover:after:w-[100%] uppercase transform nav-link-item"
+                class="relative text-sm leading-6 font-medium text-black after:content-[''] after:bg-primaryGreen after:w-[100%] after:h-[3px] after:left-0 after:-bottom-[5px] after:absolute after:duration-300 hover:after:w-[100%] uppercase transform nav-link-item"
               >
                 <a href="./consulting.html">CONSULTING</a>
               </li>
@@ -285,83 +285,39 @@
       </div>
     </nav>
     <!-- end nav bar -->
-    <header id="hero-header" class="bg-bottom w-full">
+    <header id="hero-header" class="home-header bg-bottom w-full h-[60vh]">
       <div
-        class="pt-40 sm:pt-56 pb-16 xl:w-[70%] mx-auto px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36"
+        id="hero"
+        class="flex flex-col w-full h-full bg-[#00000099] gap-6 px-4 xs:px-8 md:px-12 xl:px-16 2xl:px-36 md:flex-row-reverse md:justify-between md:items-center xl:gap-10 lg:justify-center"
       >
-        <h1 class="text-3xl xl:text-5xl text-center font-bold">
-          We are a team that walks the journey with you
-        </h1>
-      </div>
-      <div class="w-full h-72 md:h-96">
-        <img
-          class="w-full h-full object-cover"
-          src="./Images/doctor-checkup-home.jpg"
-          alt=""
-        />
-      </div>
-    </header>
-    <section class="py-16 sm:py-32">
-      <div class="w-full px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36 space-y-10">
-        <div class="">
-          <h2
-            class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
-          >
-            Get to Know Us
-          </h2>
-        </div>
-        <div
-          class="flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
-        >
-          <div
-            class="relative w-full md:w-[50%] lg:w-[40%] h-[300px] md:h-[450px] rounded-md border-2 border-textWhite reveal"
-          >
-            <img
-              src="./Images/setup-business.jpg"
-              class="absolute top-0 left-0 w-full h-full object-cover rounded-md"
-            />
-          </div>
-          <div class="w-full md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8">
-            <h2
-              class="text-2xl xl:text-3xl font-bold text-primaryTextBlack reveal"
-            >
-              Starting your Home Health Care business is simpler when you have
-              support
-            </h2>
-            <div class="space-y-4 xl:space-y-8">
-              <p class="text-sm text-primaryTextBlack reveal">
-                Starting a home healthcare agency can be an overwhelming task
-                due to the extensive amount of paperwork involved. Managing
-                different documents, dealing with various institutions,
-                complying with different regulations, and ensuring that you are
-                on the right track can be a headache.
-              </p>
-              <p class="text-sm text-primaryTextBlack reveal">
-                Starting a home healthcare agency can be an overwhelming task
-                due to the extensive amount of paperwork involved. Managing
-                different documents, dealing with various institutions,
-                complying with different regulations, and ensuring that you are
-                on the right track can be a headache.
-              </p>
+        <div class="w-full xl:w-[70%] mt-36 2xs:mt-56 sm:mt-[40%] md:mt-[10%]">
+          <div class="flex flex-col gap-6 xl:gap-8 class-hero-text">
+            <div>
+              <h1
+                id=""
+                class="hero-h1 text-2xl 2xs:text-3xl text-white text-center font-bold 2xl:text-5xl"
+              >
+                Home Health Care Consultation
+              </h1>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </header>
     <section class="bg-secondaryBlueLight py-16 sm:py-32">
       <div class="w-full px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36 space-y-10">
         <div class="">
           <h2
-            class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
+            class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl"
           >
-            What Makes Us Different
+            Our Home Care Licensing includes
           </h2>
-          <!-- <p
-            class="mt-2 mx-auto text-sm text-textGray text-center md:w-[60%] lg:text-base reveal"
+          <p
+            class="mt-2 mx-auto text-sm text-textGray text-center md:w-[60%] lg:text-base"
           >
             Discover our range of dedicated services designed to support and
             empower individuals with developmental disabilities.
-          </p> -->
+          </p>
         </div>
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5"
@@ -417,32 +373,31 @@
         </div>
       </div>
     </section>
-    <section class="py-16 sm:py-32">
-      <div class="w-full px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36 space-y-10">
-        <div class="">
-          <h2
-            class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
-          >
-            Professionalism is at the core
-          </h2>
-        </div>
+    <section class="bg-white pt-16 sm:pt-32">
+      <div class="px-4 xs:px-8 space-y-10">
+        <h2
+          class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
+        >
+          Document Management
+        </h2>
         <div
           class="flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
         >
           <div
-            class="relative w-full md:w-[50%] lg:w-[40%] h-[300px] md:h-[450px] rounded-md border-2 border-textWhite reveal"
+            class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[30%] h-[300px] md:h-[450px] rounded-md border-2 border-textWhite reveal"
           >
             <img
               src="./Images/setup-business.jpg"
               class="absolute top-0 left-0 w-full h-full object-cover rounded-md"
             />
           </div>
-          <div class="w-full md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8">
+          <div
+            class="w-full bg-transparent md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8"
+          >
             <h2
               class="text-2xl xl:text-3xl font-bold text-primaryTextBlack reveal"
             >
-              Starting your Home Health Care business is simpler when you have
-              support
+              Starting your Home Health Care business
             </h2>
             <div class="space-y-4 xl:space-y-8">
               <p class="text-sm text-primaryTextBlack reveal">
@@ -460,10 +415,473 @@
                 on the right track can be a headache.
               </p>
             </div>
+            <a
+              href=""
+              class="w-fit flex items-center gap-2 text-base font-semibold rounded-xl bg-primaryGreen text-white px-6 py-4 duration-300 transform"
+            >
+              <span>Get Started</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
+    <section class="bg-white pt-16 sm:pt-32">
+      <div class="px-4 xs:px-8 space-y-10">
+        <h2
+          class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
+        >
+          Document Management
+        </h2>
+        <div
+          class="flex flex-col-reverse gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
+        >
+          <div
+            class="w-full bg-transparent md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8"
+          >
+            <h2
+              class="text-2xl xl:text-3xl font-bold text-primaryTextBlack reveal"
+            >
+              Starting your Home Health Care business
+            </h2>
+            <div class="space-y-4 xl:space-y-8">
+              <p class="text-sm text-primaryTextBlack reveal">
+                Starting a home healthcare agency can be an overwhelming task
+                due to the extensive amount of paperwork involved. Managing
+                different documents, dealing with various institutions,
+                complying with different regulations, and ensuring that you are
+                on the right track can be a headache.
+              </p>
+              <p class="text-sm text-primaryTextBlack reveal">
+                Starting a home healthcare agency can be an overwhelming task
+                due to the extensive amount of paperwork involved. Managing
+                different documents, dealing with various institutions,
+                complying with different regulations, and ensuring that you are
+                on the right track can be a headache.
+              </p>
+            </div>
+            <a
+              href=""
+              class="w-fit flex items-center gap-2 text-base font-semibold rounded-xl bg-primaryGreen text-white px-6 py-4 duration-300 transform"
+            >
+              <span>Get Started</span>
+            </a>
+          </div>
+          <div
+            class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[30%] h-[300px] md:h-[450px] rounded-md border-2 border-textWhite reveal"
+          >
+            <img
+              src="./Images/setup-business.jpg"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-md"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white pt-16 sm:pt-32">
+      <div class="px-4 xs:px-8 space-y-10">
+        <h2
+          class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
+        >
+          Document Management
+        </h2>
+        <div
+          class="flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
+        >
+          <div
+            class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[30%] h-[300px] md:h-[450px] rounded-md border-2 border-textWhite reveal"
+          >
+            <img
+              src="./Images/setup-business.jpg"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-md"
+            />
+          </div>
+          <div
+            class="w-full bg-transparent md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8"
+          >
+            <h2
+              class="text-2xl xl:text-3xl font-bold text-primaryTextBlack reveal"
+            >
+              Starting your Home Health Care business
+            </h2>
+            <div class="space-y-4 xl:space-y-8">
+              <p class="text-sm text-primaryTextBlack reveal">
+                Starting a home healthcare agency can be an overwhelming task
+                due to the extensive amount of paperwork involved. Managing
+                different documents, dealing with various institutions,
+                complying with different regulations, and ensuring that you are
+                on the right track can be a headache.
+              </p>
+              <p class="text-sm text-primaryTextBlack reveal">
+                Starting a home healthcare agency can be an overwhelming task
+                due to the extensive amount of paperwork involved. Managing
+                different documents, dealing with various institutions,
+                complying with different regulations, and ensuring that you are
+                on the right track can be a headache.
+              </p>
+            </div>
+            <a
+              href=""
+              class="w-fit flex items-center gap-2 text-base font-semibold rounded-xl bg-primaryGreen text-white px-6 py-4 duration-300 transform"
+            >
+              <span>Get Started</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white pt-16 sm:pt-32">
+      <div class="px-4 xs:px-8 space-y-10">
+        <h2
+          class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
+        >
+          Document Management
+        </h2>
+        <div
+          class="flex flex-col-reverse gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
+        >
+          <div
+            class="w-full bg-transparent md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8"
+          >
+            <h2
+              class="text-2xl xl:text-3xl font-bold text-primaryTextBlack reveal"
+            >
+              Starting your Home Health Care business
+            </h2>
+            <div class="space-y-4 xl:space-y-8">
+              <p class="text-sm text-primaryTextBlack reveal">
+                Starting a home healthcare agency can be an overwhelming task
+                due to the extensive amount of paperwork involved. Managing
+                different documents, dealing with various institutions,
+                complying with different regulations, and ensuring that you are
+                on the right track can be a headache.
+              </p>
+              <p class="text-sm text-primaryTextBlack reveal">
+                Starting a home healthcare agency can be an overwhelming task
+                due to the extensive amount of paperwork involved. Managing
+                different documents, dealing with various institutions,
+                complying with different regulations, and ensuring that you are
+                on the right track can be a headache.
+              </p>
+            </div>
+            <a
+              href=""
+              class="w-fit flex items-center gap-2 text-base font-semibold rounded-xl bg-primaryGreen text-white px-6 py-4 duration-300 transform"
+            >
+              <span>Get Started</span>
+            </a>
+          </div>
+          <div
+            class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[30%] h-[300px] md:h-[450px] rounded-md border-2 border-textWhite reveal"
+          >
+            <img
+              src="./Images/setup-business.jpg"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-md"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white py-16 sm:py-32">
+      <div class="px-4 xs:px-8 space-y-10">
+        <h2
+          class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
+        >
+          Our Policies and Procedures
+        </h2>
+        <div
+          class="flex flex-col-reverse gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
+        >
+          <div
+            class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[40%] h-[300px] md:h-[550px] rounded-md border-2 border-textWhite reveal"
+          >
+            <img
+              src="./Images/setup-business.jpg"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-md"
+            />
+          </div>
+          <div
+            class="w-full bg-transparent md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8"
+          >
+            <h2
+              class="text-2xl xl:text-3xl font-bold text-primaryTextBlack reveal"
+            >
+              Sub title
+            </h2>
+            <div class="space-y-4 xl:space-y-6">
+              <div class="flex items-start gap-3 reveal">
+                <img class="w-5 h-5" src="./Images/check.png"/>
+                <p class="text-sm text-primaryTextBlack ">
+                  <strong>Point 1: </strong>Starting a home healthcare agency can
+                  be an overwhelming task due to the extensive amount of paperwork
+                  involved. Starting a home healthcare agency can
+                  be an overwhelming task due to the extensive amount of paperwork
+                  involved.
+                </p>
+              </div>
+              
+              <div class="flex items-start gap-3 reveal">
+                <img class="w-5 h-5" src="./Images/check.png"/>
+                <p class="text-sm text-primaryTextBlack ">
+                  <strong>Point 1: </strong>Starting a home healthcare agency can
+                  be an overwhelming task due to the extensive amount of paperwork
+                  involved. Starting a home healthcare agency can
+                  be an overwhelming task due to the extensive amount of paperwork
+                  involved.
+                </p>
+              </div>
+              <div class="flex items-start gap-3 reveal">
+                <img class="w-5 h-5" src="./Images/check.png"/>
+                <p class="text-sm text-primaryTextBlack ">
+                  <strong>Point 1: </strong>Starting a home healthcare agency can
+                  be an overwhelming task due to the extensive amount of paperwork
+                  involved. Starting a home healthcare agency can
+                  be an overwhelming task due to the extensive amount of paperwork
+                  involved.
+                </p>
+              </div>
+              
+            </div>
+            <a
+              href=""
+              class="w-fit flex items-center gap-2 text-base font-semibold rounded-xl bg-primaryGreen text-white px-6 py-4 duration-300 transform"
+            >
+              <span>Get Started</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="bg-secondaryBlueLight py-16 sm:py-32">
+      <div class="w-full px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36">
+        <div class="">
+          <h2
+            class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
+          >
+            What We Offer
+          </h2>
+          <p
+            class="mt-2 mx-auto text-sm text-textGray text-center md:w-[60%] lg:text-base reveal"
+          >
+            Discover our range of dedicated services designed to support and
+            empower individuals with developmental disabilities.
+          </p>
+        </div>
+        <div class="pb-6 pt-16 lg:pt-16 w-full">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5"
+          >
+            <div
+              class="group relative items-center justify-center overflow-hidden cursor-pointer rounded-xl hover:shadow-lg hover:shadow-black/30 transition-shadow"
+            >
+              <div class="w-full h-96">
+                <img
+                  src="./Images/doctor-checkup-home.jpg"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+                />
+              </div>
+              <div
+                class="absolute h-96 w-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"
+              ></div>
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[55%] sm:translate-y-[52%] xl:translate-y-[57%] group-hover:translate-y-0 transition-all"
+              >
+                <h1 class="text-3xl font-bold text-white">Consulting</h1>
+                <p
+                  class="text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  facillis dolore
+                </p>
+                <a
+                  href="./contact-us.html"
+                  class="items-center gap-2 text-sm font-semibold rounded-md bg-primaryGreen text-white px-4 py-1 duration-300 uppercase transform"
+                >
+                  <span>View Service</span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="group relative items-center justify-center overflow-hidden cursor-pointer rounded-xl hover:shadow-lg hover:shadow-black/30 transition-shadow"
+            >
+              <div class="w-full h-96">
+                <img
+                  src="./Images/doctor-checkup-home.jpg"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+                />
+              </div>
+              <div
+                class="absolute h-96 w-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"
+              ></div>
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[55%] sm:translate-y-[52%] xl:translate-y-[57%] group-hover:translate-y-0 transition-all"
+              >
+                <h1 class="text-3xl font-bold text-white">Consulting</h1>
+                <p
+                  class="text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  facillis dolore
+                </p>
+                <a
+                  href="./contact-us.html"
+                  class="items-center gap-2 text-sm font-semibold rounded-md bg-primaryGreen text-white px-4 py-1 duration-300 uppercase transform"
+                >
+                  <span>View Service</span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="group relative items-center justify-center overflow-hidden cursor-pointer rounded-xl hover:shadow-lg hover:shadow-black/30 transition-shadow"
+            >
+              <div class="w-full h-96">
+                <img
+                  src="./Images/doctor-checkup-home.jpg"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+                />
+              </div>
+              <div
+                class="absolute h-96 w-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"
+              ></div>
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[55%] sm:translate-y-[52%] xl:translate-y-[57%] group-hover:translate-y-0 transition-all"
+              >
+                <h1 class="text-3xl font-bold text-white">Consulting</h1>
+                <p
+                  class="text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  facillis dolore
+                </p>
+                <a
+                  href="./contact-us.html"
+                  class="items-center gap-2 text-sm font-semibold rounded-md bg-primaryGreen text-white px-4 py-1 duration-300 uppercase transform"
+                >
+                  <span>View Service</span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="group relative items-center justify-center overflow-hidden cursor-pointer rounded-xl hover:shadow-lg hover:shadow-black/30 transition-shadow"
+            >
+              <div class="w-full h-96">
+                <img
+                  src="./Images/doctor-checkup-home.jpg"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+                />
+              </div>
+              <div
+                class="absolute h-96 w-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"
+              ></div>
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[55%] sm:translate-y-[52%] xl:translate-y-[57%] group-hover:translate-y-0 transition-all"
+              >
+                <h1 class="text-3xl font-bold text-white">Consulting</h1>
+                <p
+                  class="text-sm text-white mb-3 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  facillis dolore
+                </p>
+                <a
+                  href="./contact-us.html"
+                  class="items-center gap-2 text-sm font-semibold rounded-md bg-primaryGreen text-white px-4 py-1 duration-300 uppercase transform"
+                >
+                  <span>View Service</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="bg-white py-16 sm:py-32">
+      <div
+        class="px-4 xs:px-8 flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
+      >
+        <div
+          class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[30%] h-[300px] md:h-[450px] rounded-md border-2 border-textWhite reveal"
+        >
+          <img
+            src="./Images/setup-business.jpg"
+            class="absolute top-0 left-0 w-full h-full object-cover rounded-md"
+          />
+        </div>
+        <div class="w-full md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8">
+          <h2
+            class="text-2xl xl:text-3xl font-bold text-primaryTextBlack reveal"
+          >
+            Starting your Home Health Care business is simpler when you have
+            support
+          </h2>
+          <div class="space-y-4 xl:space-y-8">
+            <p class="text-sm text-primaryTextBlack reveal">
+              Starting a home healthcare agency can be an overwhelming task due
+              to the extensive amount of paperwork involved. Managing different
+              documents, dealing with various institutions, complying with
+              different regulations, and ensuring that you are on the right
+              track can be a headache.
+            </p>
+            <p class="text-sm text-primaryTextBlack reveal">
+              Starting a home healthcare agency can be an overwhelming task due
+              to the extensive amount of paperwork involved. Managing different
+              documents, dealing with various institutions, complying with
+              different regulations, and ensuring that you are on the right
+              track can be a headache.
+            </p>
+            <div class="flex gap-8 justify-between reveal">
+                      <div class="hero-ctas flex flex-row gap-2 sm:gap-6 w-full md:w-80">
+                          <a id="" href="./Pages/contact-us.html" class=" border-2 border-primaryGreen bg-primaryGreen hover:bg-primaryYellow hover:border-primaryYellow cursor-pointer text-sm px-5 py-2 rounded-lg text-textWhite text-center duration-300 uppercase transform">Contact Us</a>
+                          <a id="" href="./Pages/donate.html" class=" border-2 border-primaryGreen hover:bg-primaryYellow hover:border-primaryYellow cursor-pointer text-sm px-5 py-2 rounded-lg text-primaryGreenborder-primaryGreen hover:text-textWhite text-center duration-300 uppercase transform"> Donate</a>
+                      </div>
+                      
+                  </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section id="home-contact-section" class="bg-white py-16 sm:py-32">
+      <div class="w-full sm:px-8 md:px-12 xl:px-16 2xl:px-36 space-y-16">
+        <div class="max-[479px]:px-4">
+          <h2
+            class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
+          >
+            Contact Our Sales Team
+          </h2>
+          <p
+            class="mt-2 mx-auto text-sm text-textGray text-center md:w-[60%] lg:text-base reveal"
+          >
+            Discover our range of dedicated services designed to support and
+            empower individuals with developmental disabilities.
+          </p>
+        </div>
+        <div
+          class="w-full flex flex-col lg:flex-row items-start gap-12 justify-between"
+        >
+          <div
+            class="hs-form-frame w-full"
+            data-region="na1"
+            data-form-id="87c96558-30be-4dcc-aedb-de24523243b3"
+            data-portal-id="49405010"
+          ></div>
+          <div class="w-full flex items-center justify-center max-[479px]:px-8">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.2741681805896!2d-111.99608562411393!3d40.57970327141382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528f0c9b34d397%3A0xda20b5ff8646596!2s4373%20Lennox%20Dr%2C%20South%20Jordan%2C%20UT%2084009%2C%20USA!5e0!3m2!1sen!2srw!4v1730551090769!5m2!1sen!2srw"
+              width="400"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <footer
       class="bg-[#000812] w-full mx-auto px-8 md:px-12 xl:px-16 2xl:px-36 pb-6 pt-16 lg:pt-24"
