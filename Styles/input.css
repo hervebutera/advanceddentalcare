@@ -15,6 +15,16 @@ body {
     background-size: cover;
 
 }
+.refugee-support-header {
+    background-image: url("../Images/refugee-support-header-img.jpg");
+    background-size: cover;
+    background-position: top;
+}
+.health-care-header {
+    background-image: url("../Images/health-care-header-img.jpg");
+    background-size: cover;
+    background-position: top;
+}
 .custom-left-full {
     left: 100%;
     transition: 0.8s;
@@ -326,3 +336,18 @@ body {
     height:10rem; /* 5rem */
     border-radius: 50%;
 }
+
+.parent-border-and-shadow {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: #d0c2fc;
+}
+
+.job-title-border-and-shadow {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: #d0c2fc;
+}
+
+
+
