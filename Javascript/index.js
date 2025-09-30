@@ -1,276 +1,260 @@
-const contact_phone = "(000)-000-0000";
+const contact_phone = "+250 700000000";
 const contact_email = "info@example.com";
-const contact_address = "4373 Lennox Drive, South Jordan, UT 84009";
-const mobile_menu = document.getElementById('mobile-menu');
-const menu_open_btn = document.getElementById('menu-open');
-const mobile_menu_bg_blocker = document.getElementById('mobile-menu-bg-blocker');
-const hero_header = document.getElementById('hero-header');
-const navbar = document.getElementById('navbar');
+const contact_address = "KG 11 Ave, Kigali, Rwanda";
+const mobile_menu = document.getElementById("mobile-menu");
+const menu_open_btn = document.getElementById("menu-open");
+const mobile_menu_bg_blocker = document.getElementById(
+  "mobile-menu-bg-blocker"
+);
+const hero_header = document.getElementById("hero-header");
+const navbar = document.getElementById("navbar");
 const nav_link_item = document.querySelectorAll(".nav-link-item");
 const logo_text = document.getElementById("logo-text");
 // const nav_links_div = document.getElementById("nav-links-div");
 const menu_open_svg = document.getElementById("menu-open-svg");
 
-
-
-
-
-
-    menu_open_btn.addEventListener('click', function() {
-        mobile_menu.classList.remove('custom-left-full');
-        mobile_menu.classList.add('custom-width-full');
-        mobile_menu_bg_blocker.classList.remove('hidden')
-        mobile_menu_bg_blocker.classList.add('mobile-menu-bg-blocker')
-    })
-
-    const menu_close_btn = document.getElementById('menu-close');
-
-    menu_close_btn.addEventListener('click', function() {
-        mobile_menu.classList.remove('custom-width-full');
-        mobile_menu.classList.add('custom-left-full');
-        mobile_menu_bg_blocker.classList.remove('mobile-menu-bg-blocker')
-        mobile_menu_bg_blocker.classList.add('hidden')
-    })
-
-window.addEventListener('scroll', reveal);               
-
-function reveal() {
-    let reveals = document.querySelectorAll('.reveal');
-    
-    for (let i = 0; i < reveals.length; i++) {
-        let windowHeight = window.innerHeight;
-            let revealTop = reveals[i].getBoundingClientRect().top;
-            let revealPoint = 0;
-
-            if (revealTop < windowHeight - revealPoint) {
-                reveals[i].classList.add("arrived");
-            } else {
-                reveals[i].classList.remove("arrived")
-            }
-    } 
-    
-    
-}
-
-// const chat_open_btn = document.getElementById("chat-open-btn");
-// const chat = document.getElementById("chat");
-// const chat_close = document.getElementById("chat-close");
-// const chat_body = document.getElementById("chat-body");
-
-// let chatOpening = false;
-
-// chat_open_btn.addEventListener("click", () => {
-//     if (!chatOpening) {
-//         chat.classList.toggle("hidden");
-//         if (!chat.classList.contains("hidden")) {
-//             chatOpening = true;
-//             chat_start().then(() => {
-//                 chatOpening = false;
-//                 ask_questions();
-//             });
-//         } else {
-//             chatOpening = false;
-//         }
-//     }
-// });
-
-// chat_close.addEventListener("click", () => {
-//     chat.classList.add("hidden");
-//     chatOpening = false;
-// });
-
-// const chat_responses = {
-//     "welcome": ["Hi",
-//         "I am here to answer questions you may have about Life Care Community.",
-//         ],
-//         "questions": {
-//             "Just saying hi": [
-//                 "Hi",
-//                 "I hope life is good with you.",
-//                 "Feel free to navigate our website to know more.",
-//             ],
-//             "What is Life Care Community?": [
-//                 "Life Care Community is an organization dedicated to empowering the lives of individuals with developmental disabilities by providing person-centered care.",
-//                 { linkText: "Learn more on our About Us page", link: `${window.location.origin + '/life-care-source-website'}/Pages/about-us.html` }
-//             ],
-//             "What services do you offer?": [
-//                 "Services we offer include residential support, adult educational day services, respite care, host homes and more others.",
-//                 "Check out more of our services from the services menu.",
-//             ],
-//             "How can I donate?": [
-//                 "Your donations help us provide better services and support for individuals with developmental disabilities.",
-//                 { linkText: "Visit our Donate page to make a contribution", link: `${window.location.origin + '/life-care-source-website'}/Pages/donate.html` }
-//             ],
-//             "How do I contact you?": [
-//                 `You can send us a message on ${contact_email}`,
-//                 "You can also contact us through our contact us page.",
-//                 { linkText: "Visit our contact us page", link: `${window.location.origin + '/life-care-source-website'}/Pages/contact-us.html` }
-//             ],
-//         },
-    
-// }
-
-// const chat_start = () => {
-//     return new Promise((resolve) => {
-//         chat_body.innerHTML = "";
-//         chat_responses.welcome.map((response, index) => {
-//             setTimeout(() => {
-//                 chat_body.innerHTML += `
-//                 <div class="chat-responses">
-//                     <span
-//                         class="chat-response-item"
-//                     >
-//                         ${response}
-//                     </span>
-//                 </div>
-//                 `
-                
-//               if (index === chat_responses.welcome.length - 1) {
-//                 resolve();
-//               }
-//             }, (index + 1) * 400)
-//         })
-//     })
-// }
-// const ask_questions = () => {
-//     setTimeout(() => {
-//         chat_body.innerHTML += `
-//         <div class="chat-responses">
-//             <span class="chat-response-item questions-starter" >
-//                 How else can I assist you today?
-//             </span>
-//         </div>
-//         <div class="chat-responses ask-questions">        
-//             <span
-//                 class="chat-question-item questions-unroll"
-//             >
-//                 Ask a question
-//             </span>
-//         </div>` 
-//         chat_body.scrollTop = chat_body.scrollHeight;
-
-//         let length = document.querySelectorAll(".ask-questions").length;
-//         let length2 = document.querySelectorAll(".questions-unroll").length;
-        
-//         document.querySelectorAll('.questions-unroll')[length2 - 1].addEventListener('click', function () {
-//             document.querySelectorAll(".ask-questions")[length - 1].style.display = 'none';
-//             questions_display();
-//         });
-//     }, 400)
-// }
-// const questions_display = () => {
-//     setTimeout(() => {
-//         chat_body.innerHTML += `
-//         <div class="chat-responses">
-//             <h6 class="chat-questions-notifier">Choose a question</h6>
-//         </div>
-//         `
-//         Object.keys(chat_responses.questions).map((question) => {
-//             chat_body.innerHTML += `
-//             <div class="chat-responses">        
-//                 <span
-//                     class="chat-question-item question-item"
-//                     data-question="${question}"
-//                 >
-//                     ${question}
-//                 </span>
-//             </div>`
-//         }) 
-//         chat_body.scrollTop = chat_body.scrollHeight;
-
-//         document.querySelectorAll('.question-item').forEach(item => {
-//             item.addEventListener('click', function() {
-//                 const question = this.getAttribute('data-question');
-//                 onQuestionClick(question).then(ask_questions);
-//             });
-//         });
-
-//     }, 400)
-    
-// }
-
-// const onQuestionClick = (question_key) => {
-//     return new Promise((resolve) => {
-//         const length = chat_responses.questions[question_key].length;
-//         setTimeout(() => {
-//             chat_body.innerHTML += `
-//                 <div class="chat-sent-questions">
-//                     <span class="chat-sent-question-item">
-//                         ${question_key}
-//                     </span>
-//                 </div>
-//             `
-//             chat_body.scrollTop = chat_body.scrollHeight;
-//         }, 400)
-//         chat_responses.questions[question_key].map((response, index) => {
-//             setTimeout(() => {
-//                 if ((typeof response) === "object") {
-//                     chat_body.innerHTML += `
-//                         <div class="chat-responses">
-//                             <span
-//                                 class="chat-response-item"
-//                             >
-//                                 <a class="chat-response-link" href="${response.link}">${response.linkText}</a>
-//                             </span>
-//                         </div>
-//                         `
-//                 } else {
-//                     chat_body.innerHTML += `
-//                         <div class="chat-responses">
-//                             <span
-//                                 class="chat-response-item"
-//                             >
-//                                 ${response}
-//                             </span>
-//                         </div>
-//                         `
-//                 }
-//                 chat_body.scrollTop = chat_body.scrollHeight;
-//                 if (index === length - 1) {
-//                     resolve();
-//               }
-//             }, (index + 2) * 400)
-//         })
-//     })
-// }
-
-// window.onload = () => {
-    document.querySelectorAll(".contact-phone").forEach(item => {
-        item.innerHTML = contact_phone;
-        item.href = `tel:${contact_phone}`
-    })
-    document.querySelectorAll(".contact-email").forEach(item => {
-        item.innerHTML = contact_email;
-        item.href = `mailto:${contact_email}`
-    })
-    document.querySelectorAll(".contact-address").forEach(item => {
-        item.innerHTML = contact_address;
-        item.href = "https://maps.app.goo.gl/irqkFz5tzQ2ky1QdA"
-    })
-    document.querySelectorAll(".contact-phone-icon").forEach(item => {
-        item.href = `tel:${contact_phone}`
-    })
-    document.querySelectorAll(".contact-email-icon").forEach(item => {
-        item.href = `mailto:${contact_email}`
-    })
-    document.querySelectorAll(".contact-address-icon").forEach(item => {
-        item.href = "https://maps.app.goo.gl/irqkFz5tzQ2ky1QdA"
-    })
-// }
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // Adding logo for index.html
-    document.querySelectorAll(".logo-img-home").forEach(item => {
-        item.src = './Images/logo.jpg';
-    })
-
-    // Adding logo for other html pages
-    document.querySelectorAll(".logo-img-others").forEach(item => {
-        item.src = '../Images/logo.jpg';
-    })
+menu_open_btn.addEventListener("click", function () {
+  mobile_menu.classList.remove("translate-x-full"); //mobile_menu.classList.remove("custom-left-full");
+  mobile_menu.classList.add("translate-x-0");
+  mobile_menu.classList.add("custom-width-full"); //custom-width-full
+  mobile_menu_bg_blocker.classList.remove("hidden");
+  mobile_menu_bg_blocker.classList.add("mobile-menu-bg-blocker");
 });
 
+const menu_close_btn = document.getElementById("menu-close");
 
+menu_close_btn.addEventListener("click", function () {
+  mobile_menu.classList.remove("translate-x-0"); //custom-width-full
+  // mobile_menu.classList.remove("custom-width-full");
+  mobile_menu.classList.add("translate-x-full"); //custom-left-full
+  mobile_menu_bg_blocker.classList.remove("mobile-menu-bg-blocker");
+  mobile_menu_bg_blocker.classList.add("hidden");
+});
 
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let revealTop = reveals[i].getBoundingClientRect().top;
+    let revealPoint = 0;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add("arrived");
+    } else {
+      reveals[i].classList.remove("arrived");
+    }
+  }
+}
+
+// window.onload = () => {
+document.querySelectorAll(".contact-phone").forEach((item) => {
+  item.innerHTML = contact_phone;
+  item.href = `tel:${contact_phone}`;
+});
+document.querySelectorAll(".contact-email").forEach((item) => {
+  item.innerHTML = contact_email;
+  item.href = `mailto:${contact_email}`;
+});
+document.querySelectorAll(".contact-address").forEach((item) => {
+  item.innerHTML = contact_address;
+  item.href = "https://maps.app.goo.gl/keWLks5XDGuE4nZu9";
+});
+document.querySelectorAll(".contact-phone-icon").forEach((item) => {
+  item.href = `tel:${contact_phone}`;
+});
+document.querySelectorAll(".contact-email-icon").forEach((item) => {
+  item.href = `mailto:${contact_email}`;
+});
+document.querySelectorAll(".contact-address-icon").forEach((item) => {
+  item.href = "https://maps.app.goo.gl/keWLks5XDGuE4nZu9";
+});
+// }
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Adding logo for index.html
+  document.querySelectorAll(".logo-img-home").forEach((item) => {
+    item.src = "./Images/logo.jpg";
+  });
+
+  // Adding logo for other html pages
+  document.querySelectorAll(".logo-img-others").forEach((item) => {
+    item.src = "../Images/logo.jpg";
+  });
+});
+
+// Services Slider Functionality - Only run on index.html
+if (
+  window.location.pathname.endsWith("index.html") ||
+  window.location.pathname.endsWith("/")
+) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const servicesSlider = document.getElementById("servicesSlider");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const dots = document.querySelectorAll(".slider-dot");
+
+    if (!servicesSlider || !prevBtn || !nextBtn) {
+      console.log("Slider elements not found, skipping slider initialization");
+      return;
+    }
+
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".services-slide");
+    const totalSlides = slides.length;
+    const slidesToShow = window.innerWidth >= 768 ? 3 : 1; // Show 3 on desktop, 1 on mobile
+    const slideWidth = slides[0].offsetWidth + 16; // width + gap
+
+    // Duplicate slides for infinite loop
+    function duplicateSlides() {
+      const sliderContent = servicesSlider.innerHTML;
+      servicesSlider.innerHTML = sliderContent + sliderContent;
+    }
+
+    // Initialize slider
+    function initSlider() {
+      duplicateSlides();
+      updateSliderPosition();
+      updateDots();
+    }
+
+    // Update slider position
+    function updateSliderPosition() {
+      const translateX = -currentSlide * slideWidth;
+      servicesSlider.style.transform = `translateX(${translateX}px)`;
+    }
+
+    // Update dot indicators
+    function updateDots() {
+      dots.forEach((dot, index) => {
+        if (index === currentSlide) {
+          dot.classList.remove("bg-gray-300");
+          dot.classList.add("bg-primaryBlue");
+        } else {
+          dot.classList.remove("bg-primaryBlue");
+          dot.classList.add("bg-gray-300");
+        }
+      });
+    }
+
+    // Go to next slide
+    function nextSlide() {
+      currentSlide++;
+      updateSliderPosition();
+      updateDots();
+
+      // Reset to beginning when reaching the end of first set
+      if (currentSlide >= totalSlides) {
+        setTimeout(() => {
+          currentSlide = 0;
+          servicesSlider.style.transition = "none";
+          updateSliderPosition();
+          setTimeout(() => {
+            servicesSlider.style.transition = "transform 0.5s ease-in-out";
+          }, 50);
+        }, 500);
+      }
+    }
+
+    // Go to previous slide
+    function prevSlide() {
+      currentSlide--;
+      updateSliderPosition();
+      updateDots();
+
+      // Jump to end of first set when going before beginning
+      if (currentSlide < 0) {
+        setTimeout(() => {
+          currentSlide = totalSlides - 1;
+          servicesSlider.style.transition = "none";
+          updateSliderPosition();
+          setTimeout(() => {
+            servicesSlider.style.transition = "transform 0.5s ease-in-out";
+          }, 50);
+        }, 500);
+      }
+    }
+
+    // Go to specific slide
+    function goToSlide(slideIndex) {
+      currentSlide = slideIndex;
+      updateSliderPosition();
+      updateDots();
+    }
+
+    // Event listeners
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+
+    // Dot navigation
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => goToSlide(index));
+    });
+
+    // Touch/swipe support for mobile
+    let startX = 0;
+    let endX = 0;
+
+    servicesSlider.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    servicesSlider.addEventListener("touchend", (e) => {
+      endX = e.changedTouches[0].clientX;
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const diff = startX - endX;
+
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+          nextSlide(); // Swipe left - next slide
+        } else {
+          prevSlide(); // Swipe right - previous slide
+        }
+      }
+    }
+
+    // Keyboard navigation
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") {
+        prevSlide();
+      } else if (e.key === "ArrowRight") {
+        nextSlide();
+      }
+    });
+
+    // Auto-play slider (optional)
+    let autoPlayInterval;
+
+    function startAutoPlay() {
+      autoPlayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+
+    function stopAutoPlay() {
+      clearInterval(autoPlayInterval);
+    }
+
+    // Start auto-play
+    startAutoPlay();
+
+    // Pause auto-play on hover
+    servicesSlider.addEventListener("mouseenter", stopAutoPlay);
+    servicesSlider.addEventListener("mouseleave", startAutoPlay);
+
+    // Handle window resize
+    window.addEventListener("resize", () => {
+      const newSlidesToShow = window.innerWidth >= 768 ? 3 : 1;
+      if (newSlidesToShow !== slidesToShow) {
+        initSlider();
+      }
+    });
+
+    // Initialize the slider
+    initSlider();
+  });
+}
