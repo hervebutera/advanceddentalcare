@@ -1,3 +1,6 @@
+const API_URL = "https://advanceddentalcenter-bn.onrender.com/api";
+// const API_URL = "http://localhost:8000/api";
+
 const contact_phone = "+250 700000000";
 const contact_email = "info@example.com";
 const contact_address = "KG 11 Ave, Kigali, Rwanda";
@@ -258,3 +261,44 @@ if (
     initSlider();
   });
 }
+
+const formatDate = (DBdateString) => {
+  const dateObj = new Date(DBdateString);
+
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  return {
+    year: dateObj.getFullYear(),
+    day: dateObj.getDate(),
+    month: dateObj.getMonth() + 1,
+    monthName: monthNames[dateObj.getMonth()],
+    hours: dateObj.getHours().toString().padStart(2, "0"),
+    minutes: dateObj.getMinutes().toString().padStart(2, "0"),
+    date: `${dateObj.getDate()} ${
+      monthNames[dateObj.getMonth()]
+    }, ${dateObj.getFullYear()}`,
+    time: `${dateObj.getHours().toString().padStart(2, "0")}:${dateObj
+      .getMinutes()
+      .toString()
+      .padStart(2, "0")}`,
+  };
+};
+
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+

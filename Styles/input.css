@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .editor-content-output ul,
+  .editor-content-output ol {
+    @apply list-disc ml-7;
+  }
+}
+
 body {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
@@ -12,6 +19,16 @@ body {
 .home-header {
   background-image: url("../Images/hero-dentist-img.jpg");
   background-size: cover;
+}
+.blog-header {
+  background-image: url("../Images/blog_cover.webp");
+  background-size: cover;
+  background-position: 0% 20%;
+}
+.contact-header {
+  background-image: url("../Images/contact_cover.jpg");
+  background-size: cover;
+  background-position: 0% 30%;
 }
 
 .refugee-support-header {
@@ -482,11 +499,141 @@ body {
   color: white !important;
 }
 
+/* Blog container */
+.editor-content-output {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* Headings */
+.editor-content-output h1,
+.editor-content-output h2,
+.editor-content-output h3,
+.editor-content-output h4,
+.editor-content-output h5,
+.editor-content-output h6,
+.editor-content-output p {
+  color: #222;
+}
+
+.editor-content-output h1 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.editor-content-output h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+}
+
+.editor-content-output h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+}
+
+.editor-content-output h4 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Paragraphs */
+.editor-content-output p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Links */
+.editor-content-output a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.editor-content-output a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+.editor-content-output ul,
+.editor-content-output ol {
+  margin-bottom: 20px;
+}
+
+.editor-content-output ul li,
+.editor-content-output ol li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.editor-content-output ul li p,
+.editor-content-output ol li p {
+  margin-bottom: 0px;
+}
+
+/* Blockquotes */
+.editor-content-output blockquote {
+  font-style: italic;
+  padding: 15px;
+  background: #f1f1f1;
+  border-left: 5px solid #007bff;
+  margin: 20px 0;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-skeleton-2 > * {
+  background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+  background-size: 200% 100%;
+  animation: skeleton 1.5s infinite linear;
+}
+
+.animate-skeleton-2 > .username-holder {
+  background: none;
+  background-size: none;
+  animation: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
 @media screen and (max-width: 480px) {
   .home-header {
     background-image: url("../Images/hero-dentist-img.jpg");
     background-size: cover;
     background-position: 70% center;
+  }
+  .blog-header {
+    background-image: url("../Images/blog_cover.webp");
+    background-size: cover;
+    background-position: 70% top;
+  }
+  .contact-header {
+    background-image: url("../Images/contact_cover.jpg");
+    background-size: cover;
+    background-position: 70% top;
   }
 }
 
@@ -526,4 +673,86 @@ body {
 .animate-spin-slow {
   background-size: 200% 200%;
   animation: spin-slow 0.5s linear infinite;
+}
+
+.white-card {
+  min-height: 22rem /* 384px */;
+}
+
+.white-card-image {
+  min-height: 170px;
+  max-height: 170px;
+  margin-bottom: 10px;
+}
+
+.white-card-text {
+  min-height: 46%;
+  max-height: 46%;
+  position: relative;
+}
+
+.white-card-text-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+}
+
+.white-card-text-title:hover {
+  color: #3b82f6;
+}
+
+.white-card-read-more-link {
+  margin-top: 10px;
+}
+
+.home-blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.home-blog-card-image {
+  margin-bottom: 16px;
+}
+
+.home-blog-card-title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.home-blog-card-title:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-skeleton {
+  background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+  background-size: 200% 100%;
+  animation: skeleton 1.5s infinite linear;
+}
+
+@media (min-width: 480px) {
+  .white-card {
+    min-width: 320px;
+    max-width: 320px;
+  }
+
+  .read-more-blog-btn {
+    display: none;
+  }
 }

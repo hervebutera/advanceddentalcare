@@ -188,3 +188,84 @@ if (
     initPartnersSlider();
   });
 }
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const blogsWrapper = document.getElementById("blogs-wrapper");
+  const skeletons = document.getElementById("skeletons");
+  const errorPlaceholder = document.getElementById("error-placeholder");
+
+  try {
+    skeletons.classList.remove("hidden");
+    blogsWrapper.classList.add("opacity-0");
+    errorPlaceholder.classList.add("hidden");
+
+    const response = await fetch(`${API_URL}/blog`);
+    if (!response.ok) throw new Error("Network response was not ok");
+
+    const blogs = await response.json();
+    if (!blogs || blogs.length === 0) throw new Error("No blogs found");
+
+    const sortedBlogs = blogs.sort(
+      (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+    );
+    const latestBlogs = sortedBlogs.slice(0, 4);
+
+    blogsWrapper.innerHTML = latestBlogs
+      .map(
+        (blog) => `
+        <a
+          href="${`./blog-open.html?blogId=${encodeURIComponent(
+            blog.id
+          )}&title=${encodeURIComponent(
+            String(blog.title)
+              .trim()
+              .toLowerCase()
+              .replace(/[^a-z0-9\s]/g, "")
+              .replace(/\s+/g, "-")
+          )}`}"
+        >
+          <div class="cursor-pointer sm:p-2 md:max-w-[320px]">
+            <div class="home-blog-card sm:p-2 md:max-w-[320px] sm:hover:rounded-xl sm:hover:shadow-md sm:hover:shadow-black/30 sm:hover:border sm:hover:border-primaryBlue/20 transition-shadow">
+              <div class="home-blog-card-image w-full h-[250px] rounded-lg overflow-hidden">
+                <img
+                  src="${blog.thumbnailimageurl}"
+                  alt="${blog.title}"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <h2 class="home-blog-card-title md:max-w-[320px] text-xl font-bold text-primaryTextBlack ">
+                ${blog.title}
+              </h2>
+              <a
+                href="${`./blog-open.html?blogId=${encodeURIComponent(
+                  blog.id
+                )}&title=${encodeURIComponent(
+                  String(blog.title)
+                    .trim()
+                    .toLowerCase()
+                    .replace(/[^a-z0-9\s]/g, "")
+                    .replace(/\s+/g, "-")
+                )}`}"
+                class="read-more-blog-btn w-fit px-3 py-2 text-sm text-white font-semibold rounded-full bg-primaryBlue hover:bg-secondaryBlue"
+              >
+                <span>Read More</span>
+              </a>
+            </div>
+          </div>
+        </a>
+    `
+      )
+      .join("");
+
+    skeletons.classList.add("hidden");
+    blogsWrapper.classList.remove("opacity-0");
+  } catch (error) {
+    console.error("Error fetching blogs:", error.message);
+    skeletons.classList.add("hidden");
+    errorPlaceholder.textContent =
+      error.message === "No blogs found"
+        ? "No blogs found."
+        : "Error loading blogs. Please try again later.";
+    errorPlaceholder.classList.remove("hidden");
+  }
+});

@@ -282,12 +282,12 @@
               <li
                 class="relative text-base leading-6 font-medium text-black after:content-[''] after:bg-primaryBlue after:w-[0%] after:h-[3px] after:left-0 after:-bottom-[5px] after:absolute after:duration-300 hover:after:w-[100%] transform nav-link-item"
               >
-                <a href="">Blog</a>
+                <a href="./blog.html">Blog</a>
               </li>
             </ul>
             <div class="flex lg:flex-1 gap-4 lg:justify-end">
               <a
-                href="#"
+                href="./contact.html"
                 class="hidden lg:flex items-center gap-2 text-base font-semibold rounded-md bg-primaryBlue hover:bg-secondaryBlue text-white px-4 py-1 duration-300 uppercase transform"
               >
                 <span>Contacts</span>
@@ -327,7 +327,7 @@
       <div id="mobile-menu-bg-blocker" class="hidden"></div>
       <div
         id="mobile-menu"
-        class="fixed inset-y-0 right-0 z-50  translate-x-full transition-transform duration-500 ease-in-out overflow-y-auto bg-white px-4 xs:px-8 py-6 sm:max-w-sm sm:ring-1 sm:ring-primaryGreen/10"
+        class="fixed inset-y-0 right-0 z-50 translate-x-full transition-transform duration-500 ease-in-out overflow-y-auto bg-white px-4 xs:px-8 py-6 sm:max-w-sm sm:ring-1 sm:ring-primaryGreen/10"
       >
         <div class="flex items-center justify-between">
           <a href="./index.html" class="-m-1.5 flex items-center gap-2 logo">
@@ -447,14 +447,14 @@
               <li
                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-primaryTextBlack hover:bg-gray-50"
               >
-                <a href="#">Blog </a>
+                <a href="./blog.html">Blog </a>
               </li>
             </ul>
             <div
               class="py-6 flex flex-col xs:flex-row xs:justify-between gap-3"
             >
               <a
-                href="#"
+                href="./contact.html"
                 class="w-fit -mx-3 rounded-lg px-3 py-2 text-base font-semibold leading-7 bg-primaryBlue text-textDarkWhiteHover"
                 >Contacts</a
               >
@@ -475,7 +475,9 @@
           <div class="flex flex-col gap-6 xl:gap-8 class-hero-text">
             <div class="flex flex-col gap-5">
               <div class="flex flex-col items-center gap-2">
-                <h2 class="text-2xl md:text-4xl font-bold text-white">
+                <h2
+                  class="text-xl md:text-2xl xl:text-3xl font-bold text-white"
+                >
                   Advanced Dental Centre
                 </h2>
                 <div class="flex justify-center items-center gap-3">
@@ -538,7 +540,7 @@
         </div>
       </div>
     </header>
-    <section class="bg-white py-16">
+    <section class="bg-white pt-16">
       <div
         class="px-4 xs:px-8 flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
       >
@@ -552,7 +554,7 @@
         </div>
         <div class="w-full md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8">
           <h2
-            class="flex items-center w-fit px-3 py-2 text-sm text-primaryBlue font-semibold rounded-full bg-secondaryBlueLight/40 border border-secondaryBlue/70 reveal"
+            class="flex items-center mx-auto md:ml-0 w-fit px-3 py-2 text-sm text-primaryBlue font-semibold rounded-full bg-secondaryBlueLight/40 border border-secondaryBlue/70 reveal"
           >
             Our Speciality
           </h2>
@@ -670,7 +672,7 @@
         </div>
       </div>
     </section> -->
-    <section id="services" class="py-10 md:py-16">
+    <section id="services" class="pt-32 pb-10 md:pt-36 md:pb-16">
       <div class="w-full px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36">
         <div class="">
           <h2
@@ -941,7 +943,7 @@
                       class="absolute h-96 w-full inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70 group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"
                     ></div>
                     <div
-                      class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[43%] xl:translate-y-[43%] group-hover:translate-y-0 transition-all"
+                      class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[43%] xl:translate-y-[38%] group-hover:translate-y-0 transition-all"
                     >
                       <h1 class="text-3xl font-bold text-white">
                         Major and Minor Oral Surgery
@@ -1072,7 +1074,7 @@
         </div>
       </div>
     </section>
-    <section class="py-10 md:py-16">
+    <section class="pt-10 md:pt-16">
       <div class="w-full px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36">
         <div class="">
           <h2
@@ -1209,7 +1211,7 @@
         </div>
       </div>
     </section>
-    <section id="visit-us" class="py-10 md:py-16">
+    <section id="visit-us" class="pt-32 pb-10 md:pt-36 md:pb-16">
       <div class="w-full px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36">
         <div class="mb-7">
           <h2
@@ -1451,113 +1453,79 @@
             Dental Tips & Expert Advice
           </h2>
         </div>
+
+        <!-- Blog Cards Container -->
         <div
-          class="flex flex-col gap-4 sm:flex-row flex-wrap sm:justify-center sm:items-center p-6 w-full reveal"
+          id="blogs-wrapper"
+          class="flex flex-col gap-4 sm:flex-row flex-wrap sm:justify-center items-center sm:items-start p-6 w-full reveal transition-opacity duration-500 opacity-0"
         >
-          <div class="cursor-pointer">
-            <div
-              class="flex flex-col gap-4 p-2 md:max-w-[320px] sm:hover:rounded-xl sm:hover:shadow-md sm:hover:shadow-black/30 sm:hover:border sm:hover:border-primaryBlue/20 transition-shadow"
-            >
-              <div class="w-full h-[250px] rounded-lg">
-                <img
-                  src="./Images/dental-checkup.jpg"
-                  alt=""
-                  class="w-full h-full rounded-lg object-cover"
-                />
+          <!-- Skeletons -->
+          <div
+            id="skeletons"
+            class="flex flex-col gap-4 sm:flex-row flex-wrap sm:justify-center sm:items-center w-full"
+          >
+            <div class="cursor-pointer sm:p-2 md:max-w-[320px]">
+              <div class="flex flex-col gap-4 white-card">
+                <div
+                  class="w-full h-[250px] bg-gray-300 rounded-lg animate-skeleton"
+                ></div>
+                <div
+                  class="h-6 bg-gray-300 rounded-md w-3/4 animate-skeleton"
+                ></div>
+                <div
+                  class="h-4 bg-gray-300 rounded-md w-full animate-skeleton"
+                ></div>
+                <div
+                  class="h-4 bg-gray-300 rounded-md w-5/6 animate-skeleton"
+                ></div>
               </div>
-              <h2
-                class="md:max-w-[320px] text-xl font-bold text-primaryTextBlack hover:text-blue-600 line-clamp-3"
-              >
-                The Importance of Regular Dental Checkups Importance of Regular
-                Dental Checkups 
-              </h2>
-              <a
-                href="#"
-                class="sm:hidden w-fit px-3 py-2 text-sm text-white font-semibold rounded-full bg-primaryBlue hover:bg-secondaryBlue"
-              >
-                <span>Read More</span>
-              </a>
             </div>
-          </div>
-          <div class="cursor-pointer">
-            <div
-              class="flex flex-col gap-4 p-2 md:max-w-[320px] sm:hover:rounded-xl sm:hover:shadow-md sm:hover:shadow-black/30 sm:hover:border sm:hover:border-primaryBlue/20 transition-shadow"
-            >
-              <div class="w-full h-[250px] rounded-lg">
-                <img
-                  src="./Images/dental-checkup.jpg"
-                  alt=""
-                  class="w-full h-full rounded-lg object-cover"
-                />
+            <div class="hidden md:block cursor-pointer sm:p-2 md:max-w-[320px]">
+              <div class="flex flex-col gap-4 white-card">
+                <div
+                  class="w-full h-[250px] bg-gray-300 rounded-lg animate-skeleton"
+                ></div>
+                <div
+                  class="h-6 bg-gray-300 rounded-md w-3/4 animate-skeleton"
+                ></div>
+                <div
+                  class="h-4 bg-gray-300 rounded-md w-full animate-skeleton"
+                ></div>
+                <div
+                  class="h-4 bg-gray-300 rounded-md w-5/6 animate-skeleton"
+                ></div>
               </div>
-              <h2
-                class="md:max-w-[320px] text-xl font-bold text-primaryTextBlack hover:text-blue-600 line-clamp-3"
-              >
-                The Importance of Regular Dental Checkups Importance of Regular
-                Dental Checkups
-              </h2>
-              <a
-                href="#"
-                class="sm:hidden w-fit px-3 py-2 text-sm text-white font-semibold rounded-full bg-primaryBlue hover:bg-secondaryBlue"
-              >
-                <span>Read More</span>
-              </a>
             </div>
-          </div>
-          <div class="cursor-pointer">
             <div
-              class="flex flex-col gap-4 p-2 md:max-w-[320px] sm:hover:rounded-xl sm:hover:shadow-md sm:hover:shadow-black/30 sm:hover:border sm:hover:border-primaryBlue/20 transition-shadow"
+              class="hidden 2xl:block cursor-pointer sm:p-2 md:max-w-[320px]"
             >
-              <div class="w-full h-[250px] rounded-lg">
-                <img
-                  src="./Images/dental-checkup.jpg"
-                  alt=""
-                  class="w-full h-full rounded-lg object-cover"
-                />
+              <div class="flex flex-col gap-4 white-card">
+                <div
+                  class="w-full h-[250px] bg-gray-300 rounded-lg animate-skeleton"
+                ></div>
+                <div
+                  class="h-6 bg-gray-300 rounded-md w-3/4 animate-skeleton"
+                ></div>
+                <div
+                  class="h-4 bg-gray-300 rounded-md w-full animate-skeleton"
+                ></div>
+                <div
+                  class="h-4 bg-gray-300 rounded-md w-5/6 animate-skeleton"
+                ></div>
               </div>
-              <h2
-                class="md:max-w-[320px] text-xl font-bold text-primaryTextBlack hover:text-blue-600 line-clamp-3"
-              >
-                The Importance of Regular Dental Checkups Importance of Regular
-                Dental Checkups
-              </h2>
-              <a
-                href="#"
-                class="sm:hidden w-fit px-3 py-2 text-sm text-white font-semibold rounded-full bg-primaryBlue hover:bg-secondaryBlue"
-              >
-                <span>Read More</span>
-              </a>
-            </div>
-          </div>
-          <div class="cursor-pointer">
-            <div
-              class="flex flex-col gap-4 p-2 md:max-w-[320px] sm:hover:rounded-xl sm:hover:shadow-md sm:hover:shadow-black/30 sm:hover:border sm:hover:border-primaryBlue/20 transition-shadow"
-            >
-              <div class="w-full h-[250px] rounded-lg">
-                <img
-                  src="./Images/dental-checkup.jpg"
-                  alt=""
-                  class="w-full h-full rounded-lg object-cover"
-                />
-              </div>
-              <h2
-                class="md:max-w-[320px] text-xl font-bold text-primaryTextBlack hover:text-blue-600 line-clamp-3"
-              >
-                The Importance of Regular Dental Checkups Importance of Regular
-                Dental Checkups
-              </h2>
-              <a
-                href="#"
-                class="sm:hidden w-fit px-3 py-2 text-sm text-white font-semibold rounded-full bg-primaryBlue hover:bg-secondaryBlue"
-              >
-                <span>Read More</span>
-              </a>
             </div>
           </div>
         </div>
+
+        <!-- Placeholder for empty/error message -->
+        <div
+          id="error-placeholder"
+          class="hidden text-center text-gray-600 py-8 w-full"
+        ></div>
+
         <div class="flex w-full justify-center reveal">
           <a
-            href="#"
+            href="./blog.html"
             class="mx-auto w-fit px-3 py-2 text-base text-white font-semibold rounded-full bg-primaryBlue hover:bg-secondaryBlue"
           >
             <span>View More Blogs</span>
@@ -1565,217 +1533,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="bg-white py-16 sm:py-32">
-      <div
-        class="px-4 xs:px-8 flex flex-col gap-10 2xl:gap-20 md:flex-row md:justify-center md:items-center"
-      >
-        <div
-          class="relative w-full md:w-[50%] lg:w-[40%] 2xl:w-[30%] h-[300px] md:h-[450px] rounded-md border-2 border-textWhite reveal"
-        >
-          <img
-            src="./Images/home-health-care-empowered.jpeg"
-            class="absolute top-0 left-0 w-full h-full object-cover rounded-md"
-          />
-        </div>
-        <div class="w-full md:w-[40%] 2xl:w-[500px] space-y-4 xl:space-y-8">
-          <h2
-            class="text-2xl xl:text-3xl font-bold text-primaryTextBlack reveal"
-          >
-            Partner with Life Care Source – Empowering Your Mission,
-            Strengthening Our Community
-          </h2>
-          <div class="space-y-4 xl:space-y-8">
-            <p class="text-sm text-primaryTextBlack reveal">
-              At Life Care Source, we are dedicated to empowering individuals
-              and businesses across Utah.
-            </p>
-            <p class="text-sm text-primaryTextBlack reveal">
-              <strong>Our mission</strong> is to support aspiring home health
-              care entrepreneurs, assist refugees in their journey to
-              self-sufficiency, and provide expert business development
-              consulting.
-            </p>
-            <p class="text-sm text-primaryTextBlack reveal">
-              Explore our services and discover how we can help you achieve your
-              goals.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- <section class="bg-secondaryBlueLight py-16 sm:py-32">
-      <div class="w-full px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36 space-y-8">
-        <div class="">
-          <h2
-            class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl"
-          >
-            Hear From Our Happy Clients
-          </h2>
-        </div>
-        <div class="testimonials-content">
-          <div class="swiper testimonials-slider js-testimonials-slider">
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide testimonials-item bg-white md:h-[350px] rounded-xl p-8 flex flex-col md:flex-row gap-8 lg:gap-12"
-              >
-                <div class="w-full md:w-[30%]">
-                  <img
-                    class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full object-cover"
-                    src="./Images/home-testimonials-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="w-full space-y-14">
-                  <div class="space-y-3">
-                    <img class="w-9" src="./Images/quote-left.png" alt="" />
-
-                    <p class="font-medium text-primaryTextBlack text-base">
-                      Life Care Source was instrumental in helping me launch my
-                      home health care business. Their guidance through the
-                      licensing process was invaluable.
-                    </p>
-                    <img
-                      class="w-9 float-right"
-                      src="./Images/quote-right.png"
-                      alt=""
-                    />
-                  </div>
-
-                  <div
-                    class="text-box text-center flex flex-row gap-3 items-center justify-center"
-                  >
-                    <hr class="w-16 border-gray-200 rounded-full border-2" />
-                    <h3 class="name text-lg md:text-xl font-semibold">
-                      Sarah T., <br /><strong>Salt Lake City</strong>
-                    </h3>
-                    <hr class="w-16 border-gray-200 rounded-full border-2" />
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide testimonials-item bg-white md:h-[350px] rounded-xl p-8 flex flex-col md:flex-row gap-8 lg:gap-12"
-              >
-                <div class="w-full md:w-[30%]">
-                  <img
-                    class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full object-cover"
-                    src="./Images/home-testimonials-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="w-full space-y-14">
-                  <div class="space-y-3">
-                    <img class="w-9" src="./Images/quote-left.png" alt="" />
-
-                    <p class="font-medium text-primaryTextBlack text-base">
-                      As a refugee, finding employment was challenging. The team
-                      at Life Care Source provided the support and resources I
-                      needed to secure a job and build a new life here.
-                    </p>
-                    <img
-                      class="w-9 float-right"
-                      src="./Images/quote-right.png"
-                      alt=""
-                    />
-                  </div>
-
-                  <div
-                    class="text-box text-center flex flex-row gap-3 items-center justify-center"
-                  >
-                    <hr class="w-16 border-gray-200 rounded-full border-2" />
-                    <h3 class="name text-lg md:text-xl font-semibold">
-                      Ahmed K., <br /><strong>Provo</strong>
-                    </h3>
-                    <hr class="w-16 border-gray-200 rounded-full border-2" />
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="swiper-slide testimonials-item bg-white md:h-[350px] rounded-xl p-8 flex flex-col md:flex-row gap-8 lg:gap-12"
-              >
-                <div class="w-full md:w-[30%]">
-                  <img
-                    class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full object-cover"
-                    src="./Images/lady-testimony-1jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="w-full space-y-14">
-                  <div class="space-y-3">
-                    <img class="w-9" src="./Images/quote-left.png" alt="" />
-
-                    <p class="font-medium text-primaryTextBlack text-base">
-                      Thanks to their business consulting services, our company
-                      has seen significant growth over the past year. Their
-                      strategic planning and marketing insights were
-                      game-changers.
-                    </p>
-                    <img
-                      class="w-9 float-right"
-                      src="./Images/quote-right.png"
-                      alt=""
-                    />
-                  </div>
-
-                  <div
-                    class="text-box text-center flex flex-row gap-3 items-center justify-center"
-                  >
-                    <hr class="w-16 border-gray-200 rounded-full border-2" />
-                    <h3 class="name text-lg md:text-xl font-semibold">
-                      Emily R., <br /><strong>Ogden</strong>
-                    </h3>
-                    <hr class="w-16 border-gray-200 rounded-full border-2" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="swiper-pagination js-testimonials-pagination relative mt-10 bottom-auto"
-          ></div>
-        </div>
-      </div>
-    </section> -->
-    <!-- <section id="home-contact-section" class="bg-white py-16 sm:py-32">
-      <div class="w-full sm:px-8 md:px-12 xl:px-16 2xl:px-36 space-y-16">
-        <div class="max-[479px]:px-4">
-          <h2
-            class="text-3xl font-bold tracking-tight text-primaryTextBlack text-center md:text-4xl 2xl:text-5xl reveal"
-          >
-            Contact Our Team
-          </h2>
-          <p
-            class="mt-2 mx-auto text-sm text-textGray text-center md:w-[60%] lg:text-base reveal"
-          >
-            Connect with our team for expert guidance in home health care,
-            business development, and community support.
-          </p>
-        </div>
-        <div
-          class="w-full flex flex-col lg:flex-row items-start gap-12 justify-between"
-        >
-          <div
-            class="hs-form-frame w-full"
-            data-region="na1"
-            data-form-id="87c96558-30be-4dcc-aedb-de24523243b3"
-            data-portal-id="49405010"
-          ></div>
-          <div class="w-full flex items-center justify-center max-[479px]:px-8">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.2741681805896!2d-111.99608562411393!3d40.57970327141382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528f0c9b34d397%3A0xda20b5ff8646596!2s4373%20Lennox%20Dr%2C%20South%20Jordan%2C%20UT%2084009%2C%20USA!5e0!3m2!1sen!2srw!4v1730551090769!5m2!1sen!2srw"
-              width="400"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <section class="py-10 md:py-16">
       <div class="w-full px-4 sm:px-8 md:px-12 xl:px-16 2xl:px-36">
         <div
@@ -1798,7 +1555,7 @@
               Contact us to schedule an appointment with our dental specialists.
             </p>
             <a
-              href="#"
+              href="./contact.html"
               class="mx-auto w-fit px-3 py-2 text-base text-primaryBlue font-semibold rounded-full bg-white hover:bg-secondaryBlue"
             >
               <span>Contact Us</span>
@@ -1881,7 +1638,7 @@
               <li>
                 <a
                   class="text-gray-300 font-medium transition hover:text-textDarkWhiteBold"
-                  href=""
+                  href="#"
                 >
                   Home
                 </a>
@@ -1897,9 +1654,17 @@
               <li>
                 <a
                   class="text-gray-300 font-medium transition hover:text-textDarkWhiteBold"
-                  href="#"
+                  href="./blog.html"
                 >
                   Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-gray-300 font-medium transition hover:text-textDarkWhiteBold"
+                  href="./contact.html"
+                >
+                  Contacts
                 </a>
               </li>
             </ul>
@@ -2162,15 +1927,6 @@
       </div>
       <!-- </div> -->
     </footer>
-    <!--bottom corner chat -->
-
-    <!--bottom corner chat -->
-
-    <!-- bottom corner chat toggle button -->
-    <!-- <button id="chat-open-btn" class="fixed z-40 flex items-center justify-center bottom-4 right-4 w-16 h-16  sm:w-20 sm:h-20 bg-primaryGreen border rounded-full hover:border-4 hover:border-powderBlue shadow-2xl xs:right-8 ">
-        <img class="w-8 h-8 sm:w-10 sm:h-10" src="./Images/bubble-chat.png" alt="">   
-      </button>   -->
-    <!-- bottom corner chat toggle button -->
     <script src="./Javascript/index.js"></script>
     <script src="./Javascript/home.js"></script>
   </body>

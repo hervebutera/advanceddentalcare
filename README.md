@@ -1,17 +1,17 @@
-# Life Care Source Inc Website
+# Advanced Dental Centre Website
 
 ## Description
-This is a repository for the Life Care Source website.
+This is a repository for the Advanced Dental Centre website.
 
 ## Setting up the repository on your PC
 - Clone the repository by running the command:
 ```bash
-git clone https://github.com/hervebutera/life-care-source-website.git
+git clone https://github.com/hervebutera/advanceddentalcare.git
 ```
 
 - Navigate to the directory containing the repository by running the command:
 ```bash
-cd life-care-source-website
+cd advanceddentalcare
 ```
 
 ## Installations
